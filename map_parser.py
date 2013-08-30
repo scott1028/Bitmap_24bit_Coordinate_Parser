@@ -44,7 +44,8 @@ y=0
 for cs in lRawData_reduce:
 	x=0
 	while x<len(cs):
-		print (x,y),[cs[x],cs[x+1],cs[x+2]]
+		k=[cs[x],cs[x+1],cs[x+2]]==['00','00','00']
+		print (x,y),'W' if k else 'B'						# 三元運算式
 		x+=3
 	y+=1
 
